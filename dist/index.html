@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <!-- <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css"> -->
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TFVQE1GZJL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TFVQE1GZJL');
+</script>
+</head>
+
+<body>
+
+  <div id="navbar">
+    <nav>
+      <div id="left">
+        <img id="smallLogo" src="img/navLogo.jpg" alt="My personal logo that states my name, 'Kaitlyn Harsch', and below states 'Design Student'">
+        <p id="logo"> Kaitlyn Harsch </p>
+      </div>
+      <div id="right">
+        <a href="404.html" class="active">Boulder, CO</a>
+        <a href="https://www.bouldercoloradousa.com/things-to-do/insider-guides/pearl-street/">Pearl Street</a>
+        <a href="https://www.bouldercoloradousa.com/travel-info/university-of-colorado-boulder/">University</a>
+        <a href="https://www.bouldercoloradousa.com/outdoors/">Outdoor Activities</a>
+      </div>
+    </nav>
+  </div>
+
+  <section id="pics">
+    <img src="img/flatiSky.png" id="bg" alt="">
+    <img src="img/flatiMountains.png" id="mountains" alt="">
+    <img src="img/flatiRightForeground.png" id="rightfore" alt="">
+    <img src="img/flatiLeftForeground.png" id="leftfore" alt="">
+    <h2 id="text">Boulder, CO</h2>
+  </section>
+
+  <section id="about">
+    <h1> Welcome to Boulder, CO.
+    </h1>
+    <br>
+    <h2> Boulder is a perfect balance of urban and outdoors. Known for its stellar food scene, breweries, an always-exciting downtown and more outdoor activities than you can count, the city is just 30 minutes northwest of Denver, where the Rocky
+      Mountains meet the plains.
+    </h2>
+    <br>
+    <br>
+    <h3>Things to Do</h3>
+    <p>See the Flatirons glow in the sunshine or dusted in snow like a powdered-sugar donut, shop on hip and historic Pearl Street, grab your boots and hit a hiking trail, or try raved-about cuisine from one of the city's chef-led eateries. Bike, ski
+      or swim by morning, visit a muscle-melting spa by afternoon, then enjoy a concert and cocktails by night. With the great outdoors always steps away — yet urban adventure right out your hotel door, too — you'll find an endless variety of things
+      to do in Boulder, Colorado, at the foot of the Rocky Mountains.</p>
+    <br>
+    <h3>Food & Drink</h3>
+    <p>You can’t really know Boulder until you’ve tasted its dining scene. Named a top foodie city in America — with cultured chefs in its kitchens, mad-scientist brewers on tap, and bountiful farmland at its doorstep — there’s always something fresh
+      to try. Good food is the essential fuel for Boulder’s active lifestyle.</p>
+    <br>
+
+    <h3> Boulder Nightlife
+    </h3>
+    <p>Work hard, workout hard, then play even harder. That seems to be the credo of so many locals who help keep the after-dark scene in Boulder thriving, with places to indulge, relax and unwind. Boulder's exploding craft brewing scene means
+      tasting rooms are located all over town, plus these two areas are always happening:</p>
+    <br>
+    <h3>Pearl Street</h3>
+    <p>This brick-paved pedestrian walkway is the heartbeat of Boulder, and it's no different at night. Bars and restaurants line the street and fan out into the surrounding blocks. Try a cozy craft brewpub, sip prohibition-era cocktails or find
+      dive-y joints tucked underground — it's all here, plus local and big-name musical acts at the historic Boulder Theater. Just off Pearl Street is the new Rosetta Hall, an innovative food hall by day and dance club by night (Thurs–Sat). And
+      nearby is Supermountains, an Asian-influenced eatery that turns into a nightclub after dark on Fridays and Saturdays. </p>
+    <br>
+    <h3>The Hill</h3>
+    <p>The Hill is located next to the University of Colorado campus and consequently has a boisterous, student-centric nightlife scene, which includes the Fox Theatre, a legendary music venue that was called one of the country's best by Rolling
+      Stone.</p>
+    <br>
+    <br>
+  </section>
+
+  <footer>
+    <small>Designed by Kaitlyn Harsch</small>
+  </footer>
+  <script type="text/javascript">
+    let bg = document.getElementById('bg');
+    let mountains = document.getElementById('mountains');
+    let rightfore = document.getElementById('rightfore');
+    let leftfore = document.getElementById('leftfore');
+    let text = document.getElementById('text');
+
+    window.addEventListener('scroll', function() {
+      var value = window.scrollY;
+
+      bg.style.top = value * 0.05 + 'px'
+      mountains.style.top = -value * 0.1 + 'px'
+      rightfore.style.top = -value * 0.2 + 'px'
+      leftfore.style.top = -value * 0.2 + 'px'
+      text.style.top = value * .3 + 'px'
+  })
+  </script>
+  <script src="js/vendor/modernizr-3.11.8.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>

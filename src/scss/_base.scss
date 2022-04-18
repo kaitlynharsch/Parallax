@@ -1,0 +1,137 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $bg;
+  font-family: $fontfamily;
+  min-height: 1500px;
+}
+
+#pics {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pics::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+}
+
+#pics::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+}
+
+#pics img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+#text {
+  position: relative;
+  color: #fff;
+  font-size: 10vw;
+  z-index: 1;
+}
+
+#leftfore {
+  z-index: 2;
+}
+
+nav {
+  display: $flex;
+  justify-content: $end;
+  background-color: white;
+  padding: $margpad;
+}
+
+#smallLogo {
+  height: auto;
+  width: 5vw;
+  max-width: 10vw;
+  max-height: 10vh;
+}
+
+footer {
+  display: $flex;
+  justify-content: center;
+  margin: 3vh;
+}
+
+nav a {
+  font-family: 'Montserrat', sans-serif;
+  padding: $margpad;
+  margin: $margpad;
+  color: #18A0FB;
+  text-decoration: none;
+  float: right;
+  font-size: 1.5vw;
+}
+
+#left {
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+  padding-left: 1vw;
+}
+
+#right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#logo {
+  font-family: "Comfortaa", sans-serif;
+  padding-left: 1vw;
+}
+
+.active {
+  color: #DFAA96;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 4vw;
+}
+
+h2 {
+  font-size: 2vw;
+}
+
+h3 {
+  font-size: 1.8vw;
+}
+
+#about {
+  padding: 0 7% 8%;
+  justify-content: center;
+  font-size: 12px;
+}
+
+p {
+  font-size: 1.5vw;
+}
